@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Анкета посетителя ресторана</h1>
+    <form action="#" method="get"> 
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div></div>
+                <label>Имя</label>
+                <input type="text" name="username">
+            </div>
+            <br>
+            <div>
+                <label>Телефон</label>
+                <input type="tel" name="phone">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Дата посещения</label>
+                <input type="date" name="date">
+            </div>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <div>
+                <label>Возраст</label>
+                <input type="number" name="yo" min="1" max="100" step="1">
+            </div>
+            <br>
+            <div>
+                <label>Любимая кухня</label>
+                <select>
+                    <option> Русская</option>
+                    <option>Средеземноморская</option>
+                    <option>Итальянская</option>
+                    <option>Американская</option>
+                    <option>Восточная</option>
+                    <option>Украинская</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Какие блюда вы бы хотели увидеть в меню?</label>
+                <textarea name="" id="text" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Оценка нашего заведения</legend>
+                <div>
+                    <label> <b>Почему вы выбрали наше заведение?</b></label>
+                </div>                
+                <br>
+                <div> 
+                    <input type="radio" name="var"> Недалеко от дома/работы
+                </div>
+                <br>
+                <div> 
+                    <input type="radio" name="var"> Увидел рекламу
+                </div>
+                <br>
+                <div> 
+                    <input type="radio" name="var"> Посоветовали
+                </div>
+                <br>
+                <div> 
+                    <input type="radio" name="var"> Оптимальное соотношение цены и качества
+                </div>
+                <br>
+            <div>
+                <label> <b>Вы будете рекомендовать наше заведение?</b></label>
+            </div>
+            <br>
+                <div> 
+                    <input type="radio" name="answer"> Да
+                </div>
+                <br>
+                <div> 
+                    <input type="radio" name="answer"> Нет
+                </div>
+                <br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Отправить">
+      </form>
+    </body>
+</html>
