@@ -11,36 +11,36 @@
     <form action="#" method="get"> 
         <fieldset>
             <legend>Контактная информация</legend>
-            <div></div>
-                <label>Имя</label>
-                <input type="text" name="username">
+            <div>
+                <label for="username">Имя</label>
+                <input id="username" type="text">
             </div>
             <br>
             <div>
-                <label>Телефон</label>
-                <input type="tel" name="phone">
+                <label for="tel">Телефон</label>
+                <input id="tel" type="tel">
             </div>
             <br>
             <div>
-                <label>Email</label>
-                <input type="email" name="email">
+                <label for="email">Email</label>
+                <input id="email" type="email">
             </div>
             <br>
             <div>
-                <label>Дата посещения</label>
-                <input type="date" name="date">
+                <label for="date">Дата посещения</label>
+                <input id="date" type="date" >
             </div>
             <br>
         </fieldset>
         <fieldset>
             <legend>Персональная информация</legend>
             <div>
-                <label>Возраст</label>
-                <input type="number" name="yo" min="1" max="100" step="1">
+                <label for="yo">Возраст</label>
+                <input type="number" id="yo" min="1" max="100" step="1">
             </div>
             <br>
             <div>
-                <label>Любимая кухня</label>
+                <label>Любимая кухня
                 <select>
                     <option> Русская</option>
                     <option>Средеземноморская</option>
@@ -49,49 +49,30 @@
                     <option>Восточная</option>
                     <option>Украинская</option>
                 </select>
+                </label>
             </div>
             <br>
             <div>
-                <label>Какие блюда вы бы хотели увидеть в меню?</label>
-                <textarea name="" id="text" cols="30" rows="10"></textarea>
+                <label for="eat">Какие блюда вы бы хотели увидеть в меню?</label>
+                <textarea name="" id="eat" cols="30" rows="10"></textarea>
             </div>
             <br>
         </fieldset>
         <fieldset>
             <legend>Оценка нашего заведения</legend>
-                <div>
-                    <label> <b>Почему вы выбрали наше заведение?</b></label>
-                </div>                
-                <br>
-                <div> 
-                    <input type="radio" name="var"> Недалеко от дома/работы
-                </div>
-                <br>
-                <div> 
-                    <input type="radio" name="var"> Увидел рекламу
-                </div>
-                <br>
-                <div> 
-                    <input type="radio" name="var"> Посоветовали
-                </div>
-                <br>
-                <div> 
-                    <input type="radio" name="var"> Оптимальное соотношение цены и качества
-                </div>
-                <br>
             <div>
-                <label> <b>Вы будете рекомендовать наше заведение?</b></label>
-            </div>
-            <br>
-                <div> 
-                    <input type="radio" name="answer"> Да
-                </div>
-                <br>
-                <div> 
-                    <input type="radio" name="answer"> Нет
-                </div>
-                <br>
-            </fieldset>
+                <label> <b>Почему вы выбрали наше заведение?</b>
+                    <p><input type="radio" name="var"> Недалеко от дома/работы</p>
+                    <p><input type="radio" name="var"> Увидел рекламу</p>
+                    <p><input type="radio" name="var"> Посоветовали</p>
+                    <p><input type="radio" name="var"> Оптимальное соотношение цены и качества</p>
+                </label>
+            <div>
+                <label> <b>Вы будете рекомендовать наше заведение?</b>
+                    <p><input type="radio" name="answer"> Да</p> 
+                    <p><input type="radio" name="answer"> Нет</p> 
+                </label>
+        </fieldset>
             <br>
             <input type="submit" value="Отправить">
       </form>
