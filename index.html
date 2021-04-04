@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Анкета посетителя ресторана</h1>
@@ -13,22 +14,22 @@
             <legend>Контактная информация</legend>
             <div>
                 <label for="username">Имя</label>
-                <input id="username" type="text">
+                <input class="pol" id="username" type="text">
             </div>
             <br>
             <div>
                 <label for="tel">Телефон</label>
-                <input id="tel" type="tel">
+                <input class="pol" id="tel" type="tel">
             </div>
             <br>
             <div>
                 <label for="email">Email</label>
-                <input id="email" type="email">
+                <input class="pol" id="email" type="email">
             </div>
             <br>
             <div>
                 <label for="date">Дата посещения</label>
-                <input id="date" type="date" >
+                <input class="pol" id="date" type="date" >
             </div>
             <br>
         </fieldset>
@@ -36,12 +37,12 @@
             <legend>Персональная информация</legend>
             <div>
                 <label for="yo">Возраст</label>
-                <input type="number" id="yo" min="1" max="100" step="1">
+                <input class="pol" type="number" id="yo" min="1" max="100" step="1">
             </div>
             <br>
             <div>
-                <label>Любимая кухня
-                <select>
+                <label class="w-400">Любимая кухня
+                <select class="pol ml-70">
                     <option> Русская</option>
                     <option>Средеземноморская</option>
                     <option>Итальянская</option>
@@ -54,27 +55,29 @@
             <br>
             <div>
                 <label for="eat">Какие блюда вы бы хотели увидеть в меню?</label>
-                <textarea name="" id="eat" cols="30" rows="10"></textarea>
+                <textarea class="pol" name="" id="eat" cols="30" rows="10"></textarea>
             </div>
             <br>
         </fieldset>
         <fieldset>
             <legend>Оценка нашего заведения</legend>
             <div>
-                <label> <b>Почему вы выбрали наше заведение?</b>
-                    <p><input type="radio" name="var"> Недалеко от дома/работы</p>
-                    <p><input type="radio" name="var"> Увидел рекламу</p>
-                    <p><input type="radio" name="var"> Посоветовали</p>
-                    <p><input type="radio" name="var"> Оптимальное соотношение цены и качества</p>
+                <label> 
+                <p class="quest">Почему вы выбрали наше заведение?</p> 
+                    <p class="line"><input type="radio" name="var"> Недалеко от дома/работы</p>
+                    <p class="line"><input type="radio" name="var"> Увидел рекламу</p>
+                    <p class="line"><input type="radio" name="var"> Посоветовали</p>
+                    <p class="line"><input type="radio" name="var"> Оптимальное соотношение цены и качества</p>
                 </label>
             <div>
-                <label> <b>Вы будете рекомендовать наше заведение?</b>
-                    <p><input type="radio" name="answer"> Да</p> 
-                    <p><input type="radio" name="answer"> Нет</p> 
+                <label> 
+                 <p class="quest">Вы будете рекомендовать наше заведение?</p> 
+                    <p class="line"><input type="radio" name="answer"> Да</p>
+                    <p class="line"><input type="radio" name="answer"> Нет</p> 
                 </label>
         </fieldset>
             <br>
-            <input type="submit" value="Отправить">
+            <input class="send" type="submit" value="Отправить">
       </form>
     </body>
 </html>

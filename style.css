@@ -1,0 +1,50 @@
+h1 {
+    color: #712300;
+    font-size: 32px;
+    font-weight: bold;
+}
+div,p {
+    color:  #712300;
+    font-size: 16px;
+}
+.pol {
+    border-color: #bbbec2;
+    border-width: 1px;
+}
+legend {
+    color: #7fcecd;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+fieldset {
+    background-color:#faf3ee;
+    border-color: #d7ffff;
+    border-radius: 8px;
+}
+.send {
+    border-color: #d7ffff;
+    font-size: 12px;
+    padding:12px 18px;
+    color:#712300;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fafcfc), to(#51dbdb));
+    border-color: #d7ffff;
+    border-radius: 4px;
+}
+div label {
+    width: 180px;
+    display: inline-block;
+}
+.quest {
+    font-weight: bold;
+    width: 350px;
+}
+.line {
+    width: 350px;
+}
+.w-400 {
+    width: 400px;
+}
+.ml-70 {
+    margin-left: 70px;
+}
